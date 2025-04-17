@@ -1,5 +1,6 @@
 import { useFrame } from "@react-three/fiber"
 import { useRef } from "react"
+import { Stats, OrbitControls } from '@react-three/drei'
 
 
 export default function Experience() 
@@ -26,6 +27,9 @@ export default function Experience()
                 <planeGeometry />
                 <meshBasicMaterial color="greenyellow" />
             </mesh>
+            <OrbitControls target-y={-1} /> // orientation de la cam
+            <axesHelper args={[4]} /> // taille des axesHelper
+            <Stats /> // afficher les stats (fps)
         </>
     )
 }
