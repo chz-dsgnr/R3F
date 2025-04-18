@@ -1,5 +1,3 @@
-Ce projet utilise **Vite** pour la gestion du build côté frontend, combiné à un serveur **Node.js** pour le backend.
-
 ## Prérequis
 
 - Node.js ≥ 16
